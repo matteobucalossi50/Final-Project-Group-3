@@ -81,7 +81,7 @@ earlystop = EarlyStopping(monitor = 'val_loss',
 callbacks = [reduce_lr, earlystop]
 
 # compile model
-n_epochs = 100
+n_epochs = 1000
 opt = Adam(lr=1e-3, decay= 1e-3/n_epochs)
 
 
